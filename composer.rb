@@ -3176,7 +3176,7 @@ end
 # >-----------------------------[ Run 'Bundle Install' ]-------------------------------<
 
 say_wizard "Installing gems. This will take a while."
-run 'bundle install --without production'
+run 'bundle install --without production; rbenv rehash;'
 say_wizard "Updating gem paths."
 Gem.clear_paths
 # >-----------------------------[ Run 'After Bundler' Callbacks ]-------------------------------<
